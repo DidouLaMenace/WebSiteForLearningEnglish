@@ -1,0 +1,35 @@
+### Run ###
+
+Sous Linux :
+
+### Installer Flask ###
+
+apt install python3
+
+pip install flask
+
+### Installer SQLite ###
+
+sudo apt install sqlite3
+
+### Installer DOTENV ###
+
+python-dotenv-0.21.0
+
+### Installer les requirements ###
+
+pip install -r requirements.txt
+
+```Remarque : Flask-Session Pas utiliser pour l'instant```
+
+### Lancer le site ###
+
+Via flask, executer :
+
+export FLASK_DEBUG=1
+
+flask run
+
+Via python : 
+
+python3 app.py

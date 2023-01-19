@@ -1,0 +1,110 @@
+@import url(//db.onlinewebfonts.com/c/effd74cbf0d7ec814ef5b5c8b44e0988?family=VeneerW01-Two);
+@import url(//db.onlinewebfonts.com/c/b11f35f77210c651367969365f87af24?family=Trajan+Pro);
+
+@font-face {font-family: "VeneerW01-Two"; src: url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.eot"); src: url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.woff") format("woff"), url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.svg#VeneerW01-Two") format("svg"); } 
+@font-face {font-family: "Trajan Pro"; src: url("//db.onlinewebfonts.com/t/b11f35f77210c651367969365f87af24.eot"); src: url("//db.onlinewebfonts.com/t/b11f35f77210c651367969365f87af24.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b11f35f77210c651367969365f87af24.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b11f35f77210c651367969365f87af24.woff") format("woff"), url("//db.onlinewebfonts.com/t/b11f35f77210c651367969365f87af24.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b11f35f77210c651367969365f87af24.svg#Trajan Pro") format("svg"); } 
+
+
+body {
+    background-color:azure;
+}
+
+.tx-ju {
+    text-align: justify;
+}
+
+.tx-center {
+    text-align: center;
+}
+
+.buttoncolor {
+    background-color: rgb(8, 83, 37);
+    color: white;
+    font-weight: bold;
+}
+
+.width {
+    width: 100px;
+}
+
+.bg-color-nav {
+    background: purple;    
+}
+
+.white {
+    color: rgb(216, 211, 211);
+}
+
+.bg-color-fp {
+    background-color: rgb(118, 118, 221);
+}
+
+.heightmax {
+    height: 100%;
+}
+
+.tnr {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bienvenue {
+    font-size:5em;
+    font-family:"VeneerW01-Two";
+}
+
+.mt-actu {
+    margin-top: 9em;
+}
+
+.position-bienvenue  {
+    padding-right: 10%;
+    margin-top: 5em;
+    text-align: right;
+}
+
+.img-arrondi {
+    border-radius: 50%;
+}
+
+.img-actu-1 {
+    margin-bottom: 7.5%;
+}
+
+.img-actu-2 {
+    margin-bottom: 2.5%;
+}
+
+.div-img-actu {
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 10%;
+}
+
+.text-green{
+    color: green;
+}
+
+.text-next-edit {
+    font-family: "Trajan Pro";
+    height: max-content;
+    width: max-content;
+    color: darkslategrey;
+}
+
+.tx-title {
+    text-shadow: 20%;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Page Edition 2022 */
+
+.color-left-edit {
+    background-color:slateblue;
+    border-radius: 10%;
+    height: 150px;
+}
+
+.info-part-height {
+    height: 70%;
+}

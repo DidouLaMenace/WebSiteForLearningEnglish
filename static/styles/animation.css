@@ -1,0 +1,18 @@
+@keyframes textwelcome {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity:1;
+    }
+    100% {
+        opacity: 0;
+    }
+}  
+
+.animwelcome {
+    color: rgb(11, 11, 68);
+    animation-name: textwelcome;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
