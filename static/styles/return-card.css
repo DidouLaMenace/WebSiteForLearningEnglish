@@ -1,12 +1,13 @@
-.box {
+.card {
     background-color: transparent;
     width: 600px;
     height: 400px;
-    border: 1px solid whitesmoke;
     perspective: 1000px;
+    color: azure;
+    border-color: azure;
 }
 
-.box-inner {
+.card-wrap {
     position: relative;
     width: 100%;
     height: 100%;
@@ -15,27 +16,27 @@
     transform-style: preserve-3d;
 }
 
-.box:hover .box-inner {
+.card:hover .card-wrap {
 transform: rotateY(180deg);
 }
 
-.box-front,
-.box-back {
+.card-front,
+.card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
 }
 
-.box-front {
+.card-front {
     border-radius: 5%;
     background-color: purple;
-    color: white;
+    color: whitesmoke;
 }
 
-.box-back {
+.card-back {
     border-radius: 5%;
     background-color: blue;
-    color: white;
+    color: whitesmoke;
     transform: rotateY(180deg);
 }

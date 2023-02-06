@@ -32,11 +32,6 @@ def card_gram_theme():
 def card_cult_theme():
     return render_template("stack-cult.html")
 
-### Présentation Général ###
-@app.route("/Tdl")
-def presentation():
-    return render_template("presentation.html")
-
 if __name__=="__main__":
     app.debug=True
     app.run()
