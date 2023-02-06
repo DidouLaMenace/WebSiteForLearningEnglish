@@ -20,8 +20,6 @@ python-dotenv-0.21.0
 
 pip install -r requirements.txt
 
-```Remarque : Flask-Session Pas utiliser pour l'instant```
-
 ### Lancer le site ###
 
 Via flask, executer :

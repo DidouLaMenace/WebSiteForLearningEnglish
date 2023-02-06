@@ -1,0 +1,44 @@
+{%  extends "nav-tdl.html" %}
+
+{%  block body %} 
+
+    <div class="row m-4"></div>
+    
+    {% for i in range(1,13,3) %}
+    <div class="row">
+        <div class="col-md w-auto"></div>
+        <div class="col">
+            <div class="card offset-1 col-2 mt-5" style="width: 18rem;">
+            <img src="/static/img/dictionary.png" class="img-fluid rounded">  
+            <div class="card-body">
+                <h5 class="card-title">Theme {{i}}</h5>
+                <a href="/card-voc-theme" class="btn btn-primary">Start</a>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card offset-1 col-2 mt-5" style="width: 18rem;">
+            <img src="/static/img/learning.png" class="img-fluid rounded">  
+            <div class="card-body">
+                <h5 class="card-title">Theme {{i+1}}</h5>
+                <a href="/card-voc-theme" class="btn btn-primary">Start</a>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card offset-1 col-2 mt-5" style="width: 18rem;">
+                <img src="/static/img/hieroglyph.png" class="img-fluid rounded">
+                <div class="card-body">
+                    <h5 class="card-title">Theme {{i+2}}</h5>
+                    <a href="/card-voc-theme" class="btn btn-primary">Start</a>
+                </div>
+            </div>
+        </div>
+        <div class="col w-auto"></div>
+    </div>
+
+    {% endfor %}
+    
+    <div class="row mt-actu"></div>
+
+{% endblock %} 
