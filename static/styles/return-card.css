@@ -1,4 +1,4 @@
-.card {
+.return-card {
     background-color: transparent;
     width: 600px;
     height: 400px;
@@ -7,7 +7,7 @@
     border-color: azure;
 }
 
-.card-wrap {
+.return-card-wrap {
     position: relative;
     width: 100%;
     height: 100%;
@@ -16,25 +16,25 @@
     transform-style: preserve-3d;
 }
 
-.card:hover .card-wrap {
+.return-card:hover .return-card-wrap {
 transform: rotateY(180deg);
 }
 
-.card-front,
-.card-back {
+.return-card-front,
+.return-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
 }
 
-.card-front {
+.return-card-front {
     border-radius: 5%;
     background-color: purple;
     color: whitesmoke;
 }
 
-.card-back {
+.return-card-back {
     border-radius: 5%;
     background-color: blue;
     color: whitesmoke;

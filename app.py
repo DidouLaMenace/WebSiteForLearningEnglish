@@ -30,6 +30,10 @@ def card_gram_theme():
 def card_cult_theme():
     return render_template("cult/stack-cult.html")
 
+@app.route("/exams")
+def exams():
+    return render_template("exams/exams.html")
+
 if __name__=="__main__":
     app.debug=True
     app.run()
