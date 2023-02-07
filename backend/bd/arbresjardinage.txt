@@ -1,0 +1,304 @@
+Une abeille 	
+A bee
+“Défense de marcher sur le gazon” 	
+“Keep off the grass”
+Arroser les fleurs 	
+To water the flowers
+Cueillir des fleurs 	
+To pick flowers
+De l’ail 	
+Garlic
+De l’aubépine 	
+Hawthorn
+De l’épinard 	
+Spinach
+De l’herbe 	
+Grass
+Des feuilles 	
+Leaves
+Des haricots 	
+Beans
+Des haricots verts 	
+Green beans
+Des légumes 	
+Vegetables
+Des lentilles 	
+Lentils
+Des mauvaises herbes 	
+Weeds
+Des pois 	
+Peas
+Des pois chiches 	
+Chickpeas
+Désherber 	
+To weed
+Du chèvrefeuille 	
+Honeysuckle
+Du houx 	
+Holly
+Du lierre 	
+Ivy
+Du lilas 	
+Lilacs
+Du maïs 	
+Corn
+Du muguet 	
+Lily of the valley
+Du persil 	
+Parsley
+L’automne 	
+Autumn, Fall
+L’été 	
+Summer, Summertime
+L’hiver 	
+Winter
+La culture 	
+The cultivation
+La pluie 	
+The rain
+La récolte 	
+The crop
+La rosée 	
+The dew
+Le feuillage 	
+The foliage
+Le jardin 	
+The garden
+Le jardinage 	
+Gardening
+Le jardinier 	
+The gardener
+Le parterre de fleurs 	
+The flowerbed
+Le printemps 	
+Spring
+Le sol, la terre 	
+The soil, the ground
+Le soleil 	
+The sun
+Les fleurs poussent 	
+The flowers are growing
+mon père aime jardiner 	
+my father likes gardening
+Planter 	
+To plant
+Pousser 	
+To grow
+tondre le gazon 	
+To mow the lawn
+Un abricotier 	
+An apricot tree
+Un arbre 	
+A tree
+Un arbre fruitier 	
+A fruit tree
+Un arrosoir 	
+A watering can
+Un artichaut 	
+An artichoke
+Un bananier 	
+A banana tree
+Un banc 	
+A bench
+Un bois 	
+A wood
+Un bouleau 	
+A birch tree
+Un bouquet de fleurs 	
+A bouquet of flowers
+Un bourgeon 	
+A bud
+Un brocoli 	
+A broccoli
+Un buis 	
+A boxwood
+Un buisson 	
+A bush
+Un céleri 	
+A celery
+Un cerisier 	
+A cherry tree
+Un champignon 	
+A mushroom
+Un chemin 	
+A path
+Un chêne 	
+An oak tree
+Un chou 	
+A cabbage
+Un chou-fleur 	
+A cauliflower
+Un choux de Bruxelles 	
+A brussel sprout
+Un citronnier 	
+A lemon tree
+Un concombre 	
+A cucumber
+Un coquelicot 	
+A poppy
+Un érable 	
+A maple tree
+Un figuier 	
+A fig tree
+Un haricot 	
+A bean
+Un hêtre 	
+A beech tree
+Un hortensia 	
+An hydrangea
+Un if 	
+A yew
+Un lis 	
+A lily
+Un marronnier 	
+A chestnut tree
+Un navet 	
+A turnip
+Un noyer 	
+A walnut tree
+Un œillet 	
+A carnation
+Un oignon 	
+An onion
+Un oignon de printemps 	
+A spring onion
+Un oranger 	
+An orange tree
+Un orme 	
+An elm tree
+Un outil 	
+A tool
+Un papillon 	
+A butterfly
+Un parterre de fleurs 	
+A flowerbed
+Un pêcher 	
+A peach tree
+Un perce-neige 	
+A snowdrop
+Un peuplier 	
+A poplar tree
+Un pin 	
+A pine tree
+Un pissenlit 	
+A dandelion
+Un platane 	
+A plane tree
+Un poireau 	
+A leek
+Un poirier 	
+A pear tree
+Un poivron 	
+A pepper
+Un pommier 	
+An apple tree
+Un potager 	
+A vegetable garden
+Un radis 	
+A radish
+Un renoncule 	
+A buttercup
+Un rosier 	
+A rose bush
+Un sapin 	
+A fir tree
+Un saule pleureur 	
+A weeping willow tree
+Un tilleul 	
+A lime tree
+Un tournesol 	
+A sunflower
+Un tronc (d’arbre) 	
+A trunk (of a tree)
+Un tuyau 	
+A hose
+Un ver 	
+A worm
+Un verger 	
+An orchard
+Un vignoble 	
+A vineyard
+Une asperge 	
+An asparagus
+Une aubergine 	
+An eggplant
+Une baie 	
+A berry
+Une betterave 	
+A beetroot
+Une branche 	
+A branch
+Une brouette 	
+A wheelbarrow
+Une campanule 	
+A bellflower
+Une carotte 	
+A carrot
+Une chrysanthème 	
+A Chrysanthemum
+Une citrouille 	
+A pumpkin
+Une clôture 	
+A fence
+Une courgette 	
+A zucchini
+Une écorce 	
+A bark
+Une endive 	
+An endive
+Une épine 	
+A thorn
+Une feuille 	
+A leaf
+Une fleur 	
+A flower
+Une forêt tropicale 	
+A tropical forest
+Une graine 	
+A seed
+Une guêpe 	
+A wasp
+Une haie 	
+A hedge
+Une jacinthe 	
+A hyacinth
+Une jonquille 	
+A daffodil
+Une laitue 	
+A lettuce
+Une marguerite 	
+A daisy
+Une orchidée 	
+An orchid
+Une patate 	
+A potato
+Une pelouse 	
+A lawn
+Une pensée 	
+A pansy
+Une piscine 	
+A swimming pool
+Une pivoine 	
+A peony
+Une plante 	
+A plant
+Une porte 	
+A door
+Une racine 	
+A root
+Une récolte 	
+A harvest
+Une rose 	
+A rose
+Une salade 	
+A salad
+Une serre 	
+A greenhouse
+Une tige 	
+A rod
+Une tomate 	
+A tomato
+Une tondeuse à gazon 	
+A lawn mower
+Une tulipe 	
+A tulip
