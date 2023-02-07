@@ -1,0 +1,50 @@
+{%  extends "nav-tdl.html" %}
+
+{%  block body %} 
+    
+    <div class="container d-flex justify-content-center align-items-center text-center">
+        <div class="row m-5">
+            <span class="section-text">Vocabulary</span>
+        </div>
+    </div>
+
+    {% for i in range(1,13,3) %}
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="row">
+
+            <div class="col m-5">
+                <div class="card" style="width: 18rem;">
+                <img src="/static/img/dictionary.png" class="img-fluid rounded">  
+                <div class="card-body">
+                    <h5 class="card-title">Theme {{i}}</h5>
+                    <a href="/card-voc-theme" class="btn btn-primary">Start</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col m-5">
+                <div class="card" style="width: 18rem;">
+                <img src="/static/img/learning.png" class="img-fluid rounded">  
+                <div class="card-body">
+                    <h5 class="card-title">Theme {{i+1}}</h5>
+                    <a href="/card-voc-theme" class="btn btn-primary">Start</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col m-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="/static/img/hieroglyph.png" class="img-fluid rounded">
+                    <div class="card-body">
+                        <h5 class="card-title">Theme {{i+2}}</h5>
+                        <a href="/card-voc-theme" class="btn btn-primary">Start</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+    </div>
+    {% endfor %}
+
+{% endblock %} 
