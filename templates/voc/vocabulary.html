@@ -8,39 +8,45 @@
         </div>
     </div>
 
-    {% for i in range(1,13,3) %}
+    {% for i in range(1,max_number_of_theme,3): %}
     <div class="container d-flex justify-content-center align-items-center">
         <div class="row">
 
-            <div class="col m-5">
-                <div class="card" style="width: 18rem;">
-                <img src="/static/img/dictionary.png" class="img-fluid rounded">  
-                <div class="card-body">
-                    <h5 class="card-title">Theme {{i}}</h5>
-                    <a href="/card-voc-theme" class="btn btn-primary">Start</a>
-                </div>
-                </div>
-            </div>
-
-            <div class="col m-5">
-                <div class="card" style="width: 18rem;">
-                <img src="/static/img/learning.png" class="img-fluid rounded">  
-                <div class="card-body">
-                    <h5 class="card-title">Theme {{i+1}}</h5>
-                    <a href="/card-voc-theme" class="btn btn-primary">Start</a>
-                </div>
-                </div>
-            </div>
-
-            <div class="col m-5">
-                <div class="card" style="width: 18rem;">
-                    <img src="/static/img/hieroglyph.png" class="img-fluid rounded">
+            {% if i < max_number_of_theme: %}
+                <div class="col m-5">
+                    <div class="card" style="width: 18rem;">
+                    <img src="/static/img/dictionary.png" class="img-fluid rounded">  
                     <div class="card-body">
-                        <h5 class="card-title">Theme {{i+2}}</h5>
+                        <h5 class="card-title">{{theme_voc[i]}}</h5>
                         <a href="/card-voc-theme" class="btn btn-primary">Start</a>
                     </div>
+                    </div>
                 </div>
-            </div>
+            {% endif %}
+
+            {% if i+1 < max_number_of_theme: %}
+                <div class="col m-5">
+                    <div class="card" style="width: 18rem;">
+                    <img src="/static/img/learning.png" class="img-fluid rounded">  
+                    <div class="card-body">
+                        <h5 class="card-title">{{theme_voc[i+1]}}</h5>
+                        <a href="/card-voc-theme" class="btn btn-primary">Start</a>
+                    </div>
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if i+2 < max_number_of_theme: %}
+                <div class="col m-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/static/img/hieroglyph.png" class="img-fluid rounded">
+                        <div class="card-body">
+                            <h5 class="card-title">{{theme_voc[i+2]}}</h5>
+                            <a href="/card-voc-theme" class="btn btn-primary">Start</a>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
 
         </div>
     
