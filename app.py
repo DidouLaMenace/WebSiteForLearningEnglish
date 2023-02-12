@@ -3,7 +3,7 @@ from flask import Flask,render_template,request
 app=Flask(__name__)
 
 theme_voc=["Animals","Gardening","Astronomy","Physical description","Family and Friends","Fruits and vegetables","Computer science","In the house", "Weather", "The human body","Hobbies","Nationality","Science","TOEIC"]
-
+theme_voc_img=["animaux.png","jardinage.png","astronomie.png","descriptionphysique.png","famille.png","legumes.png","informatique.png","maison.png","meteo.png","corpshumain.png","loisirs.png","nationalite.png","la-science.png","toeic.png"]
 @app.route("/")
 def page_accueil():
     return render_template("accueil/english.html")
@@ -19,7 +19,7 @@ def edit2022():
 @app.route("/vocabulary")
 def editsuivante():
     max_number_of_theme=len(theme_voc)
-    return render_template("voc/vocabulary.html",theme_voc=theme_voc,max_number_of_theme=max_number_of_theme)
+    return render_template("voc/vocabulary.html",theme_voc=theme_voc,theme_voc_img=theme_voc_img,max_number_of_theme=max_number_of_theme)
 
 @app.route("/card-voc-theme")
 def card_voc_theme():
