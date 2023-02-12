@@ -1,0 +1,278 @@
+un logiciel publicitaire 	
+an adware
+un administrateur web 	
+a webmaster
+l’affichage 	
+display
+une boîte mail 
+mailbox
+connexion 	
+log-in
+le courrier électronique 	
+An e-mail
+un curseur 	
+A cursor
+déconnexion 	
+logout
+des enceintes 	
+speakers
+discussion 	
+chat
+en ligne 	
+online
+externe 	
+external
+un fichier joint 	
+an attached file
+glisser-déposer 	
+drag and drop
+hébergement 	
+hosting
+informaticien 	
+computer scientist / specialist
+informaticien réseau 	
+network computer specialist
+L’informatique 	
+computing
+informatisé 	
+computerized
+ingénieur informaticien 	
+computer engineer
+l’activité de blogueur 	
+blogging
+la mémoire 	
+memory
+la mise en ligne 	
+online posting
+la toile 	
+the web
+le bas-débit 	
+slow speed internet
+le cache 	
+the cache
+le peer to peer 	
+peer-to-peer
+le téléchargement illégal 	
+illegal downloading
+le wifi 	
+the Wi-Fi
+les paramètres de confidentialité 	
+privacy settings
+les questions posées fréquemment 	
+FAQ (frequently Asked Questions)
+un logiciel 	
+a software
+le matériel informatique 	
+hardware
+le panneau de commande 	
+the control panel
+une police de caractère 	
+a font
+un port USB 	
+a USB port
+le réseau 	
+network
+sans-fil 	
+wireless
+un site Internet 	
+a website
+le téléchargement 	
+a download
+un accès à haut débit à Internet 	
+high-speed Internet access
+un accès à Internet 	
+an Internet access
+un accès sécurisé 	
+a secure access
+un afficheur 	
+a viewer
+un avatar 	
+an avatar
+un blogue 	
+a blog
+un blogueur, une blogueuse 	
+a blogger
+un bouton (de souris par ex) 	
+a button
+un câble 	
+a cable
+un casque audio 	
+a headset
+un cheval de Troie 
+trojan
+un clavier 	
+keyboard
+un coupe-feu 	
+a firewall
+un disque dur 	
+a hard disk drive
+un disque dur externe 	
+an external hard drive
+un document imprimé 	
+a printed document
+un dossier 	
+a folder
+un écran 	
+a screen
+un fichier 	
+a file
+un graveur DVD / Blueray 	
+a DVD / Blueray writer
+un hameçonnage par email 	
+phishing
+un hyperlien 	
+a hyperlink
+un lecteur 	
+a drive
+un lecteur de document 	
+a document reader
+un lien 	
+a link
+un logiciel gratuit 	
+a freeware 
+un moniteur 	
+monitor
+un mot de passe 	
+password
+un moteur de recherche 	
+a search engine
+un navigateur 	
+a browser
+un navigateur Web 	
+Web browser
+un nom de domaine 	
+domain name
+un ordinateur 	
+a computer
+un ordinateur portable 	
+a laptop
+un ordinateur pour le jeu vidéo 	
+a gaming computer
+un PC de bureau 	
+desktop computer
+un pirate informatique 	
+a hacker
+un raccourci clavier 	
+a shortcut
+un répertoire 	
+directory
+un réseau social 	
+social network
+un signet 	
+a bookmark
+un site Internet 	
+a website
+un spam 	
+a spam
+un tableur 	
+spreadsheet
+un tapis de souris 	
+mouse pad
+un virus 	
+a virus
+une adresse IP 	
+IP address
+une application 	
+an app (application)
+une barre de défilement 	
+a scroll bar
+une base de données 	
+a database
+une capture d’écran 	
+a screenshot
+une clé USB 	
+a USB stick
+une fenêtre 	
+a window
+une fenêtre contextuelle 	
+pop-up window
+une icône 	
+an icon
+une imprimante 	
+a printer
+une page d’accueil 	
+a home page
+une page Web 	
+a Web page
+une plate-forme 	
+a platform
+une souris 	
+a mouse
+une touche 	
+a key
+une webcam 	
+a webcam
+unité centrale de traitement 	
+central processing unit (cpu)
+accéder à Internet 	
+to access the Internet
+bloguer 	
+to blog
+brancher 	
+to plug
+charger, mettre en ligne 	
+to upload
+coller 
+to paste
+copier 	
+to copy
+couper 	
+to cut
+créer un nouveau dossier 	
+to create a new file
+débrancher 	
+to unplug
+défiler vers le bas 	
+to scroll down
+défiler vers le haut 	
+to scroll up
+enregistrer 	
+to save
+enregistrer sous 	
+to save as
+exporter 	
+to export
+formater 	
+to format
+fusionner 	
+to merge
+glisser-déposer 	
+to drag and drop
+importer 	
+to import
+imprimer 	
+to print
+insérer 	
+to insert
+masquer 	
+to hide
+mettre en favori 	
+to bookmark
+naviguer 	
+to browse
+numériser, scanner 	
+to scan
+ouvrir un dossier existant 	
+to open existing file
+planter 	
+to crash
+redémarrer 	
+to reboot
+relancer 	
+to restart
+sauvegarder 
+to back-up, save
+se connecter 	
+to login
+se déconnecter 	
+to logout
+sélectionner 	
+to select
+supprimer 	
+to delete
+taper 	
+to type
+télécharger 	
+to download
+trier 
+to sort 

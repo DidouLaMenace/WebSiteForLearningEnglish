@@ -1,0 +1,244 @@
+la science 	
+science
+aigu/obtus 	
+acute/obtuse
+en état d’apesanteur 	
+weightless 
+gazeux 	
+gaseous
+l’algèbre 	
+algebra
+l’arithmétique 	
+arithmetic
+l’astronomie 	
+astronomy
+l’espace 	
+space
+l’univers 	
+the universe
+la bissectrice 	
+the bisector
+la chimie 	
+chemistry
+la conquête de I’espace 	
+the conquest of space
+la géométrie 	
+geometry
+la physique 	
+physics
+la surface 	
+the area
+le compte a rebours 	
+the countdown
+le cosmos 	
+the cosmos
+le diamètre 	
+the diameter
+le rayon 	
+the radius
+le résultat 	
+the result
+le système solaire 	
+the solar system
+les mathématiques 	
+mathematics
+les progrès 	
+the progress
+pair/impair 	
+even/odd
+parallèle à 	
+parallel to
+perpendiculaire à 	
+perpendicular to
+solide/liquide 	
+solid/liquid
+un acide 	
+an acid
+un angle droit 	
+a right angle
+un astronaute 	
+an astronaut
+un astronaute, un cosmonaute 	
+a spaceman
+un astronome 	
+an astronomer
+un ballon 	
+a flask
+un brûleur 	
+a burner
+un carre/une équerre 	
+a square
+un cercle 	
+a circle
+un chercheur 	
+a research worker
+un chiffre 	
+a figure
+un chimiste 	
+a chemist
+un compas 	
+a pair of compasses
+un cosmonaute 	
+a cosmonaut
+un coté 	
+a side
+un croissant 	
+a crescent
+un envahisseur 	
+an invader
+un extraterrestre 	
+an extraterrestrial, an alien
+un gaz 	
+a gas
+un inventeur 	
+an inventor
+un laboratoire 	
+a laboratory
+un liquide 	
+a liquid
+un losange 	
+a diamond
+un mathématicien 	
+a mathematician
+un microscope 	
+a microscope
+un nombre 	
+a number
+un observatoire 	
+an observatory
+un OVNI 	
+a UFO (Unidentified Flying Object)
+un physicien 	
+a physicist
+un postulat 	
+a postulate
+un produit 	
+a product
+un rapporteur 	
+a protractor
+un rectangle 	
+a rectangle
+un scientifique 	
+a scientist
+un télescope 	
+a telescope
+un théorème 	
+a theorem
+un triangle 	
+a triangle
+un trou noir 	
+a black hole
+une addition 	
+an addition
+une comète 	
+a comet
+une conclusion 	
+a conclusion
+une courbe 	
+a curve
+une découverte 	
+a discovery
+une démonstration 	
+a demonstration
+une division 	
+a division
+une éprouvette 	
+a test tube
+une équation 	
+an equation
+une étoile filante 	
+a shooting star
+une fonction 	
+a function
+une formule 	
+a formula
+une galaxie 	
+a galaxy
+une invasion 	
+an invasion
+une invention 	
+an invention
+une lentille, un objectif 	
+a lens
+une ligne droite 	
+a straight line
+une multiplication 	
+a multiplication
+une navette 	
+a shuttle
+une opération 	
+an operation
+une planète 	
+a planet
+une pleine lune 	
+a full moon
+une somme 	
+a sum
+une soucoupe volante 	
+a flying saucer
+une soustraction 	
+a subtraction
+additionner 	
+to add
+(se) dissoudre 	
+to dissolve
+alunir 	
+to land on the moon
+anéantir 	
+to annihilate
+calculer 	
+to calculate
+compter 	
+to count
+conquérir 	
+to conquer
+croître 	
+to increase
+découvrir 	
+to discover
+décroître 	
+to decrease
+déduire 	
+to deduce
+démontrer 	
+to demonstrate
+diviser 	
+to divide
+doubler 	
+to double
+envahir 	
+to invade
+explorer 	
+to explore
+faire peur 	
+to frighten
+faire une erreur 	
+to make a mistake
+fondre 	
+to melt
+grossir 	
+to magnify
+lancer une fusée 	
+to launch a rocket
+mettre en orbite 	
+to put into orbit
+multiplier 	
+to multiply
+résoudre un problème 	
+to solve a problem
+s’évaporer 	
+to evaporate
+servir l’humanité 	
+to serve mankind
+simuler 	
+to simulate
+sonder l’espace 	
+to probe space
+soustraire 	
+to subtract
+tourner 	
+to spin round
+tracer une ligne 	
+to draw a line
+utiliser des solvants 	
+to use solvents 

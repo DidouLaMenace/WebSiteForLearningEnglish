@@ -1,0 +1,250 @@
+un abricot 	
+an apricot
+un agrume 	
+a citrus fruit
+un ananas 	
+a pineapple
+un arbre fruitier 	
+a fruit tree
+un avocat 	
+an avocado
+un cassis 	
+blackcurrant
+un citron 	
+a lemon
+un citron vert 	
+a lime
+un étal de fruits 	
+a fruit stall
+un fruit 	
+a fruit
+un fruit confit 	
+a candied fruit
+un fruit de la passion 
+a passion fruit
+un fruit de saison 	
+a seasonal fruit
+un fruit du jacquier 	
+jackfruit
+un fruit en conserve 	
+a canned fruit
+un fruit entier 	
+a whole fruit
+un fruit frais 	
+a fresh fruit
+un fruit rouge 	
+a red berry
+un fruit sec 	
+a dried fruit
+un fruit tropical 	
+a tropical fruit
+un jus de fruit 	
+a fruit juice
+un kaki 	
+a kaki
+un kiwi 	
+a kiwi
+un kumquat 	
+a kumquat
+un litchi 	
+a lychee
+un mangoustan 	
+a mangosteen
+un marchand / un vendeur de fruits 	
+a fruit seller
+un melon 
+a melon
+un pamplemousse 	
+a grapefruit
+un pépin 	
+a pip
+un pépin de raisin 	
+a grape seed
+un quartier / un morceau de fruit 	
+a piece of fruit
+un raisin sec 	
+a raisin
+un verger 	
+an orchard
+une banane 
+a banana
+une cerise / des cerises 	
+a cherry / cherries
+une clémentine 	
+a clementine
+une date 	
+a date
+une figue 	
+a fig
+une fraise 	
+a strawberry
+une framboise 	
+a raspberry
+une goyave 	
+a guava
+une grappe de raisin 	
+a bunch of grapes
+une grenade 	
+a pomegranate
+une groseille 	
+a redcurrent 
+une mandarine 	
+a tangerine
+une mangue 
+a mango
+une mûre 	
+blackberry
+une myrtille 	
+blueberry
+une noix de coco 	
+a coconut
+une orange 	
+an orange
+une papaye 	
+a papaya
+une pastèque 	
+a watermelon
+une pêche 	
+a peach
+une poire 	
+a pear
+une pomme 	
+an apple
+une prune 	
+a plum
+une salade de fruits 	
+a fruit salad
+une tomate 	
+a tomato
+de la canneberge, des airelle 	
+cranberry
+des baies de goji 	
+goji berries
+du raisin 	
+grape
+la cueillette 	
+the picking
+mûr(e) 
+ripe
+pourri(e) 	
+rotten
+sans pépins 	
+seedless 
+bio  	
+organic 
+de la rhubarbe 	
+rhubarb
+des choux de Bruxelles 	
+brussels sprouts
+des crudités 	
+raw vegetables
+des épinards 	
+spinach
+des haricots 	
+beans
+des haricots rouges 	
+kidney beans
+des haricots verts 	
+green beans / french beans
+des légumes à feuilles vertes 	
+green leafy vegetables
+des légumes de saison 	
+seasonal vegetables / in-season vegetables
+des légumes secs 	
+dried vegetables
+des légumes surgelés 	
+frozen vegetables
+des légumes verts 	
+green vegetables
+des lentilles 	
+lentils
+des pesticides 	
+pesticides
+des petits pois 	
+green peas / peas
+du bambou 	
+bamboo
+du chou frisé 	
+kale
+du manioc 	
+manioc
+du soja 	
+soy
+faire pousser des légumes 	
+to grow vegetables
+frais 	
+fresh
+les légumes 	
+vegetables
+les OGM 	
+GMOs
+peler les légumes 	
+to peel the vegetables
+pois / petits pois 	
+peas / grean peas
+un (jardin) potager 	
+vegetable garden
+un artichaut 	
+an artichoke
+un brocoli 	
+a broccoli
+un céleri 	
+a celery
+un champignon 	
+a mushroom
+un chou 	
+a cabbage
+un chou-fleur 	
+a cauliflower
+un concombre 	
+a cucumber
+un échalote 	
+a shallot
+un épi de maïs  	
+an ear of corn 
+un germe de haricot 	
+a bean sprout
+un navet 	
+a turnip
+un oignon 	
+an onion
+un oignon blanc 	
+a spring onion
+un piment 	
+a chili
+un poireau 	
+a leek
+un poivron 	
+a pepper
+un poivron rouge / vert 	
+a red / green pepper
+un potiron, une citrouille 	
+a pumpkin
+un radis 	
+a radish
+un raifort 	
+a horseradish
+une asperge 	
+an asparagus
+une aubergine  	
+an eggplant 
+une betterave  
+a beetroot 
+une carotte 	
+a carrot
+une courge 	
+a squash
+une courgette 	
+a zucchini
+une laitue 	
+a lettuce
+une patate douce 	
+a sweet potato
+une pomme de terre 	
+a potato
+une salade 
+a salad
+une tomate 	
+a tomato
+une tomate cerise 	
+a cherry tomato 
