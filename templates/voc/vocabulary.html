@@ -8,49 +8,51 @@
         </div>
     </div>
 
-    {% for i in range(0,max_number_of_theme,3): %}
-    <div class="container d-flex justify-content-center align-items-center">
-        <div class="row">
+    <form action="/card-voc-theme" method="post">
+        {% for i in range(0,max_number_of_theme,3): %}
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="row">
 
-            {% if i < max_number_of_theme: %}
-                <div class="col m-5">
-                    <div class="card" style="width: 18rem;">
-                    <img src="/static/img/{{theme_voc_img[i]}}" class="img-fluid rounded">  
-                    <div class="card-body">
-                        <h5 class="card-title">{{theme_voc[i]}}</h5>
-                        <a href="/card-voc-theme" class="btn btn-primary">Start</a>
-                    </div>
-                    </div>
-                </div>
-            {% endif %}
-
-            {% if i+1 < max_number_of_theme: %}
-                <div class="col m-5">
-                    <div class="card" style="width: 18rem;">
-                    <img src="/static/img/{{theme_voc_img[i+1]}}" class="img-fluid rounded">  
-                    <div class="card-body">
-                        <h5 class="card-title">{{theme_voc[i+1]}}</h5>
-                        <a href="/card-voc-theme" class="btn btn-primary">Start</a>
-                    </div>
-                    </div>
-                </div>
-            {% endif %}
-
-            {% if i+2 < max_number_of_theme: %}
-                <div class="col m-5">
-                    <div class="card" style="width: 18rem;">
-                        <img src="/static/img/{{theme_voc_img[i+2]}}" class="img-fluid rounded">
+                {% if i < max_number_of_theme: %}
+                    <div class="col m-5">
+                        <div class="card" style="width: 18rem;">
+                        <img src="/static/img/{{theme_voc_img[i]}}" class="img-fluid rounded">  
                         <div class="card-body">
-                            <h5 class="card-title">{{theme_voc[i+2]}}</h5>
-                            <a href="/card-voc-theme" class="btn btn-primary">Start</a>
+                            <h5 class="card-title">{{theme_voc[i]}}</h5>
+                            <button type="submit" name="selected_theme" href="/card-voc-theme" value="{{theme_voc[i]}}" class="btn btn-primary">Start</button>
+                        </div>
                         </div>
                     </div>
-                </div>
-            {% endif %}
+                {% endif %}
 
+                {% if i+1 < max_number_of_theme: %}
+                    <div class="col m-5">
+                        <div class="card" style="width: 18rem;">
+                        <img src="/static/img/{{theme_voc_img[i+1]}}" class="img-fluid rounded">  
+                        <div class="card-body">
+                            <h5 class="card-title">{{theme_voc[i+1]}}</h5>    
+                            <button type="submit" name="selected_theme" href="/card-voc-theme" value="{{theme_voc[i+1]}}" class="btn btn-primary">Start</button>
+                        </div>
+                        </div>
+                    </div>
+                {% endif %}
+
+                {% if i+2 < max_number_of_theme: %}
+                    <div class="col m-5">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/static/img/{{theme_voc_img[i+2]}}" class="img-fluid rounded">
+                            <div class="card-body">
+                                <h5 class="card-title">{{theme_voc[i+2]}}</h5>
+                                <button type="submit" name="selected_theme" href="/card-voc-theme" value="{{theme_voc[i+2]}}" class="btn btn-primary">Start</button>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+
+            </div>
+        
         </div>
-    
-    </div>
-    {% endfor %}
+        {% endfor %}
+    </form>
 
 {% endblock %} 

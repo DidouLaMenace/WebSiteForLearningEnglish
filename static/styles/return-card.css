@@ -30,7 +30,7 @@ transform: rotateY(180deg);
 
 .return-card-front {
     border-radius: 5%;
-    background-color: purple;
+    background-color: rgb(175, 22, 175);
     color: whitesmoke;
 }
 
