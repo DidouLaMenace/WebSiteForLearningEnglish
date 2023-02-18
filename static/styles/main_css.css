@@ -1,8 +1,10 @@
 @import url(//db.onlinewebfonts.com/c/effd74cbf0d7ec814ef5b5c8b44e0988?family=VeneerW01-Two);
 @import url(//db.onlinewebfonts.com/c/db7994604cdb2450e83c893d200c251b?family=OMEGLE);
+@import url(//db.onlinewebfonts.com/c/13dbbd029d70f10549374a111e88aee0?family=Milkshake);
 
 @font-face {font-family: "VeneerW01-Two"; src: url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.eot"); src: url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.woff") format("woff"), url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.svg#VeneerW01-Two") format("svg"); } 
 @font-face {font-family: "OMEGLE"; src: url("//db.onlinewebfonts.com/t/db7994604cdb2450e83c893d200c251b.eot"); src: url("//db.onlinewebfonts.com/t/db7994604cdb2450e83c893d200c251b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/db7994604cdb2450e83c893d200c251b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/db7994604cdb2450e83c893d200c251b.woff") format("woff"), url("//db.onlinewebfonts.com/t/db7994604cdb2450e83c893d200c251b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/db7994604cdb2450e83c893d200c251b.svg#OMEGLE") format("svg"); } 
+@font-face {font-family: "Milkshake"; src: url("//db.onlinewebfonts.com/t/13dbbd029d70f10549374a111e88aee0.eot"); src: url("//db.onlinewebfonts.com/t/13dbbd029d70f10549374a111e88aee0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/13dbbd029d70f10549374a111e88aee0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/13dbbd029d70f10549374a111e88aee0.woff") format("woff"), url("//db.onlinewebfonts.com/t/13dbbd029d70f10549374a111e88aee0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/13dbbd029d70f10549374a111e88aee0.svg#Milkshake") format("svg"); } 
 
 body {
     background-color:azure;
@@ -15,6 +17,12 @@ body {
 
 .section-text {
   font-family: "OMEGLE";
+  font-size: 500%;
+  color: rgb(33, 59, 58);
+}
+
+.section-text-theme {
+  font-family: "Milkshake";
   font-size: 500%;
   color: rgb(33, 59, 58);
 }
@@ -70,4 +78,19 @@ body {
 /* NavBar Bottom */
 .opacity-25 {
   opacity: 0.75;
+}
+
+/* Button exams */
+.btn-exams-restart {
+  border-radius: 10%;
+  background-color: rgb(15, 77, 15);
+  color:white;
+  font-weight: bolder;
+}
+
+.btn-exams-send {
+  border-radius: 10%;
+  background-color: rgb(85, 24, 24);
+  color:white;
+  font-weight: bolder;
 }

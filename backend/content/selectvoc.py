@@ -1,7 +1,6 @@
 import sqlite3
 
 card = sqlite3.connect('./backend/bd/question.db',check_same_thread=False)
-
 card_curs = card.cursor()
 
 def theme_selected_voc(theme):

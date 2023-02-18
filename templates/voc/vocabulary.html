@@ -8,7 +8,7 @@
         </div>
     </div>
 
-    <form action="/card-voc-theme" method="post">
+    <form action="/train-vocabulary" method="get">
         {% for i in range(0,max_number_of_theme,3): %}
         <div class="container d-flex justify-content-center align-items-center">
             <div class="row">
@@ -19,7 +19,7 @@
                         <img src="/static/img/{{theme_voc_img[i]}}" class="img-fluid rounded">  
                         <div class="card-body">
                             <h5 class="card-title">{{theme_voc[i]}}</h5>
-                            <button type="submit" name="selected_theme" href="/card-voc-theme" value="{{theme_voc[i]}}" class="btn btn-primary">Start</button>
+                            <button type="submit" name="selected_theme" href="/train-vocabulary" value="{{theme_voc[i]}}" class="btn btn-primary">Start</button>
                         </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                         <img src="/static/img/{{theme_voc_img[i+1]}}" class="img-fluid rounded">  
                         <div class="card-body">
                             <h5 class="card-title">{{theme_voc[i+1]}}</h5>    
-                            <button type="submit" name="selected_theme" href="/card-voc-theme" value="{{theme_voc[i+1]}}" class="btn btn-primary">Start</button>
+                            <button type="submit" name="selected_theme" href="/train-vocabulary" value="{{theme_voc[i+1]}}" class="btn btn-primary">Start</button>
                         </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
                             <img src="/static/img/{{theme_voc_img[i+2]}}" class="img-fluid rounded">
                             <div class="card-body">
                                 <h5 class="card-title">{{theme_voc[i+2]}}</h5>
-                                <button type="submit" name="selected_theme" href="/card-voc-theme" value="{{theme_voc[i+2]}}" class="btn btn-primary">Start</button>
+                                <button type="submit" name="selected_theme" href="/train-vocabulary" value="{{theme_voc[i+2]}}" class="btn btn-primary">Start</button>
                             </div>
                         </div>
                     </div>
