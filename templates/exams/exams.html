@@ -11,13 +11,13 @@
 
 <div class="container container-lg">
     <form method="post">
-        {% for i in range(lenlisteforexams// 2) %}
+        {% for i in range(lenlistforexams// 2) %}
             <div class="mt-5 mb-5">
                 <label class="form-label">Translate in english : <br> {{vocfrenchexams[i]}} :</label>
                 <input type="text" id="Question{{i}}" name="Answer{{i}}" placeholder="Place your answer here" class="form-control">
             </div>
         {% endfor %}
-        {% for i in range(lenlisteforexams//2,lenlisteforexams) %}
+        {% for i in range(lenlistforexams//2,lenlistforexams) %}
             <div class="mt-5 mb-5">
                 <label class="form-label">Translate in french : <br> {{vocenglishexams[i]}} :</label>
                 <input type="text" id="Question{{i}}" name="Answer{{i}}" placeholder="Place your answer here" class="form-control">
@@ -27,10 +27,10 @@
         <div class="container d-flex justify-content-center align-items-center mt-5">
             <div class="row">
                 <div class="col m-5">
-                    <button id="btn-envoyer" type="submit" class="btn btn-exams-send" formaction="/exams-result">Send</button>
+                    <button id="btn-envoyer" onclick="getAllAnswer()" type="submit" class="btn btn-exams-send" formaction="/exams">Send</button>
                 </div>
                 <div class="col m-5">
-                    <button id="btn-envoyer" type ="submit" class="btn btn-exams-restart" formaction="/exams">Restart</button>
+                    <button id="btn-restart" type ="submit" class="btn btn-exams-restart" formaction="/exams">Restart</button>
                 </div>
             </div>
         </div>
@@ -38,4 +38,12 @@
 
 </div>
 
+<script>
+var voc_response_to_translate_frenchexams = '{{vocenglishexams[:lenlistforexams//2]}}';
+var voc_response_to_translate_englishexams = '{{vocfrenchexams[lenlistforexams//2:]}}';
+var lenlistforexamsexams = '{{lenlistforexams}}';
+</script>
+
+<script src="/static/js/exams/verifyexams.js">
+</script>
 {% endblock %}

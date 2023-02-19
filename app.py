@@ -41,20 +41,13 @@ def card_cult_theme():
 
 @app.route("/exams",methods=["GET","POST"])
 def exams():
-    listeforexams=question_for_exams_voc()
+    listforexams=question_for_exams_voc()
     vocfrenchexams=[]
     vocenglishexams=[]
-    for i in range(len(listeforexams)):
-        vocfrenchexams.append(listeforexams[i][0])
-        vocenglishexams.append(listeforexams[i][1])
-    return render_template("exams/exams.html",lenlisteforexams=len(listeforexams),vocfrenchexams=vocfrenchexams,vocenglishexams=vocenglishexams)
-
-@app.route("/exams-result",methods=["GET","POST"])
-def exams_result():
-    listofUserAnswer=[]
-    for i in range(10):
-        listofUserAnswer.append(request.form.get("Answer"+str(i)))
-    return render_template("exams/exams-result.html")
+    for i in range(len(listforexams)):
+        vocfrenchexams.append(listforexams[i][0])
+        vocenglishexams.append(listforexams[i][1])
+    return render_template("exams/exams.html",lenlistforexams=len(listforexams),vocfrenchexams=vocfrenchexams,vocenglishexams=vocenglishexams)
 
 if __name__=="__main__":
     app.debug=True
