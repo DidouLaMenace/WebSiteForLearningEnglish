@@ -30,13 +30,13 @@ transform: rotateY(180deg);
 
 .return-card-front {
     border-radius: 5%;
-    background-color: rgb(175, 22, 175);
+    background-color: rgb(122, 81, 122);
     color: whitesmoke;
 }
 
 .return-card-back {
     border-radius: 5%;
-    background-color: blue;
+    background-color: rgb(81, 81, 143);
     color: whitesmoke;
     transform: rotateY(180deg);
 }
