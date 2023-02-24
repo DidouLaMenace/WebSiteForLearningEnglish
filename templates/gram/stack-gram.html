@@ -1,56 +1,39 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>English Classroom</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link href="//db.onlinewebfonts.com/c/effd74cbf0d7ec814ef5b5c8b44e0988?family=VeneerW01-Two" rel="stylesheet" type="text/css"/>
-        <link href="../static/styles/tournoi.css" rel="stylesheet">
-        <link href="../static/styles/animation.css" rel="stylesheet">
-        <link href="../static/styles/return-card.css" rel="stylesheet">
+{% extends "nav-tdl.html" %}
 
-    </head>
+{% block head %}
+    <link href="../static/styles/return-card.css" rel="stylesheet">
+{% endblock %}
 
-    <body>
-        <nav class="navbar navbar-expand-md bg-color-nav">
-            <div class="container-lg">
-                <a class="navbar-brand fw-bold" href="/"><span class="text-light white"> <img src="../static/img/royaume-uni.png" width="50" height="50"> English Classroom</span></a>
-            </div>
-        </nav>
+{% block body %}
+
+    <div class="container d-flex justify-content-center align-items-center text-center">
+        <div class="row m-5">
+            <span class="section-text-theme">{{theme_name}}</span>
+        </div>
+    </div>
+
+    <div class="container-fluid">
         
-
-        <div class="container-fluid">
-            
-            {% for i in range(10) %}
-            <div class="row">
-                <div class="col-sm m-5"></div>
-                <div class="col-sm">
-                    <div class="mt-5 tx-center">
-                        <div class="return-card">
-                            <div class="return-card-wrap">
-                              <div class="return-card-front">
-                                <h2>Question {{i}}</h2>
-                              </div>
-                              <div class="return-card-back">
-                                <h2>Réponse {{i}}</h2>
-                              </div>
+        {% for i in range(number_of_cards) %}
+        <div class="row m-5">
+            <div class="col-sm m-5"></div>
+            <div class="col-sm">
+                <div class="mt-5">
+                    <div class="return-card">
+                        <div class="return-card-wrap">
+                            <div class="return-card-front d-flex justify-content-center align-items-center">
+                            <h2>{{question[i]}}</h2>
+                            </div>
+                            <div class="return-card-back d-flex justify-content-center align-items-center">
+                            <h2>{{answer[i]}}</h2>
                             </div>
                         </div>
-                    </div>            
-                </div>
-                <div class="col-sm m-5"></div>
+                    </div>
+                </div>            
             </div>
-
-            {% endfor %}
+            <div class="col-sm m-5"></div>
         </div>
 
-        <div class="text-center">
-            <a href="https://www.flaticon.com/fr/icones-gratuites/union-jack" title="union jack icônes">Union jack icônes créées par Freepik - Flaticon</a>
-            <a href="https://www.flaticon.com/fr/icones-gratuites/anglais" title="anglais icônes">Anglais icônes créées par Freepik - Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/dictionary" title="dictionary icons">Dictionary icons created by Freepik - Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/grammar" title="grammar icons">Grammar icons created by Freepik - Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/history" title="history icons">History icons created by Eucalyp - Flaticon</a>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
-</html>
+        {% endfor %}
+    </div>
+{% endblock %}
