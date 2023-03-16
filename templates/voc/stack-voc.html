@@ -4,6 +4,7 @@
     <link href="../static/styles/return-card.css" rel="stylesheet">
 {% endblock %}
 
+
 {% block body %}
 
     <div class="container d-flex justify-content-center align-items-center text-center">
@@ -12,28 +13,103 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container mb-5 d-flex justify-content-center align-items-center text-center">
+        <div class="toggle-btn">
+            <input type="checkbox" id="toggle">
+            <label for="toggle">Learning Mode</label>
+            <span class="toggle-text-left">ON</span>
+            <span class="toggle-text-right">OFF</span>
+        </div>
+    </div>
+
+    <div id="apprentissage" style="display: block;">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <div class="row">
+                <table>
+                    <tr> 
+                        <td><span class="font-weight-bold">French Word</span></td>
+                        <td><span class="font-weight-bold">English Word</span></td>
+                    </tr>
+                    {% for i in range(number_of_cards) %}
+                        <tr>
+                            <td>{{question[i]}}</td>
+                            <td>{{answer[i]}}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="autoapprentissage" style="display: none;">
+        <div class="container-fluid justify-content-center align-items-center" >
         
-        {% for i in range(number_of_cards) %}
-        <div class="row m-5">
-            <div class="col-sm m-5"></div>
-            <div class="col-sm">
-                <div class="mt-5">
-                    <div class="return-card">
-                        <div class="return-card-wrap">
-                            <div class="return-card-front d-flex justify-content-center align-items-center">
-                            <h2>{{question[i]}}</h2>
-                            </div>
-                            <div class="return-card-back d-flex justify-content-center align-items-center">
-                            <h2>{{answer[i]}}</h2>
+            {% for i in range(0,number_of_cards,2) %}
+            <div class="row m-5">
+                {% if i < number_of_cards: %}
+                <div class="col-sm m-5"></div>
+                <div class="col-sm">
+                    <div class="mt-5">
+                        <div class="return-card">
+                            <div class="return-card-wrap">
+                                <div class="return-card-front d-flex justify-content-center align-items-center">
+                                <h2>{{question[i]}}</h2>
+                                </div>
+                                <div class="return-card-back d-flex justify-content-center align-items-center">
+                                <h2>{{answer[i]}}</h2>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>            
+                    </div>            
+                </div>
+                {% endif %}
+                <div class="col-sm m-5"></div>
+                {% if i+1 < number_of_cards: %}
+                <div class="col-sm">
+                    <div class="mt-5">
+                        <div class="return-card">
+                            <div class="return-card-wrap">
+                                <div class="return-card-front d-flex justify-content-center align-items-center">
+                                <h2>{{question[i+1]}}</h2>
+                                </div>
+                                <div class="return-card-back d-flex justify-content-center align-items-center">
+                                <h2>{{answer[i+1]}}</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+                <div class="col-sm m-5"></div>
+    
+                {% endif %}
             </div>
-            <div class="col-sm m-5"></div>
-        </div>
-
         {% endfor %}
     </div>
+   
+        
+
+
+    </div>
+
+{% endblock %}
+
+{% block script %}
+
+<script>
+    bouton = document.getElementById('toggle');
+    apprentissageMode = document.getElementById('apprentissage');
+    autoapprentissageMode = document.getElementById('autoapprentissage');
+
+    bouton.addEventListener('click', function() {
+        if (bouton.checked) {
+            apprentissageMode.style.display = 'none';
+            autoapprentissageMode.style.display = 'block';
+        }
+        else {
+            apprentissageMode.style.display = 'block';
+            autoapprentissageMode.style.display = 'none';
+        }
+    });
+</script>
+
 {% endblock %}

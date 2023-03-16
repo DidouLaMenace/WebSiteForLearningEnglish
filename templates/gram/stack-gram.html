@@ -12,10 +12,11 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid justify-content-center align-items-center" >
         
-        {% for i in range(number_of_cards) %}
+        {% for i in range(0,number_of_cards,2) %}
         <div class="row m-5">
+            {% if i < number_of_cards: %}
             <div class="col-sm m-5"></div>
             <div class="col-sm">
                 <div class="mt-5">
@@ -31,7 +32,28 @@
                     </div>
                 </div>            
             </div>
+            {% endif %}
             <div class="col-sm m-5"></div>
+            {% if i+1 < number_of_cards: %}
+            <div class="col-sm">
+                <div class="mt-5">
+                    <div class="return-card">
+                        <div class="return-card-wrap">
+                            <div class="return-card-front d-flex justify-content-center align-items-center">
+                            <h2>{{question[i+1]}}</h2>
+                            </div>
+                            <div class="return-card-back d-flex justify-content-center align-items-center">
+                            <h2>{{answer[i+1]}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            <div class="col-sm m-5"></div>
+
+            {% endif %}
+
+
         </div>
 
         {% endfor %}
