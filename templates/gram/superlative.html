@@ -1,0 +1,105 @@
+{% extends "nav-tdl.html" %}
+
+{% block head %}
+    <link href="../static/styles/return-card.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+
+    <div class="container d-flex justify-content-center align-items-center text-center">
+        <div class="row m-5">
+            <span class="section-text-theme">{{theme_name}}</span>
+        </div>
+    </div>
+
+    <section>
+        <div class="container-fluid justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-sm m-1"></div>
+                <div class="col-sm">
+                    <h2 class="text-center">Le superlatif en anglais</h2>
+<h3>Comment former le superlatif en anglais ?</h3>
+<p>Le superlatif permet de comparer une chose ou une personne par rapport à tout le reste d'un groupe. Le superlatif en anglais se forme en ajoutant <b>-est</b> à la fin d'un adjectif court (un adjectif de une ou deux syllabes) :</p>
+<ul>
+  <li>fast (rapide) devient <b>fastest</b> (le plus rapide)</li>
+  <li>big (grand) devient <b>biggest</b> (le plus grand)</li>
+  <li>hot (chaud) devient <b>hottest</b> (le plus chaud)</li>
+</ul>
+<p>Pour les adjectifs longs (trois syllabes ou plus) et pour les adjectifs courts qui se terminent déjà par <b>-y</b>, on ajoute <b>most</b> avant l'adjectif :</p>
+<ul>
+  <li>beautiful (beau) devient <b>most beautiful</b> (le plus beau)</li>
+  <li>interesting (intéressant) devient <b>most interesting</b> (le plus intéressant)</li>
+  <li>funny (drôle) devient <b>funniest</b> (le plus drôle)</li>
+</ul>
+<h3>Comment utiliser le superlatif en anglais ?</h3>
+<p>Le superlatif en anglais est utilisé pour comparer une chose ou une personne par rapport à tout le reste d'un groupe. On peut utiliser <b>the</b> avant le superlatif pour le rendre plus clair :</p>
+<ul>
+  <li>Mon frère est <b>le plus grand</b> de la famille. (My brother is <b>the tallest</b> in the family.)</li>
+  <li>Cette voiture est <b>la plus rapide</b> de toutes. (This car is <b>the fastest</b> of them all.)</li>
+  <li>Les vacances d'été sont <b>les plus agréables</b> de l'année. (Summer holidays are <b>the most enjoyable</b> of the year.)</li>
+</ul>
+<p>On peut également utiliser <b>in</b> ou <b>of</b> pour préciser le groupe de comparaison :</p>
+<ul>
+  <li>Le Mont Blanc est <b>la plus haute montagne</b> d'Europe. (Mont Blanc is <b>the highest mountain</b> in Europe.)</li>
+  <li>C'est <b>le film le plus intéressant</b> que j'aie jamais vu. (This is <b>the most interesting film</b> I've ever seen.)</li>
+  <li>Mon chat est <b>le plus mignon</b> de tous les chats. (My cat is <b>the cutest</b> of all the cats.)</li>
+</ul>
+                </div>
+                <div class="col-sm m-1"></div>
+            </div>            
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid justify-content-center align-items-center text-center mt-5">
+            <h2>TEST YOURSELF !</h2>
+        </div>
+    </section>
+
+    <div class="container-fluid justify-content-center align-items-center" >
+        
+        {% for i in range(0,number_of_cards,2) %}
+        <div class="row m-5">
+            {% if i < number_of_cards: %}
+            <div class="col-sm m-5"></div>
+            <div class="col-sm">
+                <div class="mt-5">
+                    <div class="return-card">
+                        <div class="return-card-wrap">
+                            <div class="return-card-front d-flex justify-content-center align-items-center">
+                            <h2>{{question[i]}}</h2>
+                            </div>
+                            <div class="return-card-back d-flex justify-content-center align-items-center">
+                            <h2>{{answer[i]}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            {% endif %}
+            <div class="col-sm m-5"></div>
+            {% if i+1 < number_of_cards: %}
+            <div class="col-sm">
+                <div class="mt-5">
+                    <div class="return-card">
+                        <div class="return-card-wrap">
+                            <div class="return-card-front d-flex justify-content-center align-items-center">
+                            <h2>{{question[i+1]}}</h2>
+                            </div>
+                            <div class="return-card-back d-flex justify-content-center align-items-center">
+                            <h2>{{answer[i+1]}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            <div class="col-sm m-5"></div>
+
+            {% endif %}
+
+
+        </div>
+
+        {% endfor %}
+    </div>
+{% endblock %}

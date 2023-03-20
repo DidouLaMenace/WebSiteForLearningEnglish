@@ -1,0 +1,110 @@
+{% extends "nav-tdl.html" %}
+
+{% block head %}
+    <link href="../static/styles/return-card.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+
+    <div class="container d-flex justify-content-center align-items-center text-center">
+        <div class="row m-5">
+            <span class="section-text-theme">{{theme_name}}</span>
+        </div>
+    </div>
+
+    <section>
+        <div class="container-fluid justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-sm m-1"></div>
+                <div class="col-sm">
+                    <h2 class="text-center">Le future simple en anglais</h2>
+<h3>Comment se forme le future simple ?</h3>
+<p>Le future simple se forme en utilisant "will" suivi de la base verbale du verbe principal :</p>
+<ul>
+  <li>I will study English next semester. (J'étudierai l'anglais le semestre prochain.)</li>
+  <li>You will visit New York City soon. (Tu visiteras bientôt New York.)</li>
+  <li>They will finish their project by next week. (Ils termineront leur projet d'ici la semaine prochaine.)</li>
+</ul>
+<p>Il est également possible d'utiliser "shall" à la place de "will" pour exprimer une suggestion ou une offre :</p>
+<ul>
+  <li>Shall we go to the movies tonight? (Et si on allait au cinéma ce soir ?)</li>
+  <li>Shall I help you with your luggage? (Voulez-vous que je vous aide avec vos bagages ?)</li>
+</ul>
+<h3>Comment utilise-t-on le future simple ?</h3>
+<p>Le future simple est utilisé pour exprimer une action qui se produira dans le futur :</p>
+<ul>
+  <li>Je ferai mes devoirs ce soir. (I will do my homework tonight.)</li>
+  <li>Ils visiteront Paris l'année prochaine. (They will visit Paris next year.)</li>
+  <li>Elle commencera son nouveau travail la semaine prochaine. (She will start her new job next week.)</li>
+</ul>
+<p>Le future simple peut également être utilisé pour exprimer une prédiction ou une supposition sur le futur :</p>
+<ul>
+  <li>Il pleuvra demain. (It will rain tomorrow.)</li>
+  <li>Nous gagnerons le match. (We will win the game.)</li>
+  <li>Les prix augmenteront dans les prochains mois. (Prices will rise in the coming months.)</li>
+</ul>
+<p>Enfin, le future simple peut également être utilisé pour exprimer une promesse ou une menace :</p>
+<ul>
+  <li>Je t'appellerai ce soir. (I will call you tonight.)</li>
+  <li>Si tu continues à mal te comporter, tu seras puni. (If you continue to misbehave, you will be punished.)</li>
+  <li>Je te promets que je ne te ferai jamais de mal. (I promise I will never hurt you.)</li>
+</ul>
+                </div>
+                <div class="col-sm m-1"></div>
+            </div>            
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid justify-content-center align-items-center text-center mt-5">
+            <h2>TEST YOURSELF !</h2>
+        </div>
+    </section>
+
+    <div class="container-fluid justify-content-center align-items-center" >
+        
+        {% for i in range(0,number_of_cards,2) %}
+        <div class="row m-5">
+            {% if i < number_of_cards: %}
+            <div class="col-sm m-5"></div>
+            <div class="col-sm">
+                <div class="mt-5">
+                    <div class="return-card">
+                        <div class="return-card-wrap">
+                            <div class="return-card-front d-flex justify-content-center align-items-center">
+                            <h2>{{question[i]}}</h2>
+                            </div>
+                            <div class="return-card-back d-flex justify-content-center align-items-center">
+                            <h2>{{answer[i]}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            {% endif %}
+            <div class="col-sm m-5"></div>
+            {% if i+1 < number_of_cards: %}
+            <div class="col-sm">
+                <div class="mt-5">
+                    <div class="return-card">
+                        <div class="return-card-wrap">
+                            <div class="return-card-front d-flex justify-content-center align-items-center">
+                            <h2>{{question[i+1]}}</h2>
+                            </div>
+                            <div class="return-card-back d-flex justify-content-center align-items-center">
+                            <h2>{{answer[i+1]}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            <div class="col-sm m-5"></div>
+
+            {% endif %}
+
+
+        </div>
+
+        {% endfor %}
+    </div>
+{% endblock %}

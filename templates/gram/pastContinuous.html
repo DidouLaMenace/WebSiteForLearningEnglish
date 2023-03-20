@@ -1,0 +1,108 @@
+{% extends "nav-tdl.html" %}
+
+{% block head %}
+    <link href="../static/styles/return-card.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+
+    <div class="container d-flex justify-content-center align-items-center text-center">
+        <div class="row m-5">
+            <span class="section-text-theme">{{theme_name}}</span>
+        </div>
+    </div>
+
+    <section>
+        <div class="container-fluid justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-sm m-1"></div>
+                <div class="col-sm">
+                    <h2 class="text-center">Le past continuous en anglais</h2>
+                    <h3>Comment se forme le past continuous ?</h3>
+                    <p>Le past continuous se forme en utilisant "was/were" suivi du verbe principal avec la terminaison "-ing".</p>
+                    <ul>
+                      <li>I was working all day yesterday. (J'étais en train de travailler toute la journée hier.)</li>
+                      <li>You were studying English when I called. (Tu étais en train d'étudier l'anglais quand j'ai appelé.)</li>
+                      <li>They were playing soccer in the park. (Ils étaient en train de jouer au soccer dans le parc.)</li>
+                    </ul>
+                    <h3>Comment utilise-t-on le past continuous ?</h3>
+                    <p>Le past continuous est utilisé pour décrire une action en train de se dérouler à un moment précis dans le passé :</p>
+                    <ul>
+                      <li>Actions qui étaient en train de se dérouler dans le passé :</li>
+                      <ul>
+                        <li>I was reading a book when the phone rang. (J'étais en train de lire un livre quand le téléphone a sonné.)</li>
+                        <li>She was cooking dinner while he was watching TV. (Elle était en train de préparer le dîner pendant qu'il regardait la télévision.)</li>
+                        <li>They were dancing when the music suddenly stopped. (Ils étaient en train de danser quand la musique s'est soudainement arrêtée.)</li>
+                      </ul>
+                      <li>Actions qui étaient en train de se dérouler simultanément dans le passé :</li>
+                      <ul>
+                        <li>She was writing an email while he was making a phone call. (Elle écrivait un e-mail pendant qu'il passait un appel téléphonique.)</li>
+                        <li>They were both studying for the exam when I arrived. (Ils étudiaient tous les deux pour l'examen quand je suis arrivé(e).)</li>
+                        <li>We were all eating dinner together when the power went out. (Nous étions tous en train de dîner ensemble quand le courant est tombé.)</li>
+                      </ul>
+                      <li>Actions qui étaient en train de se dérouler pendant une période de temps dans le passé :</li>
+                      <ul>
+                        <li>I was living in New York City for six months before I moved to London. (J'ai vécu à New York City pendant six mois avant de déménager à Londres.)</li>
+                        <li>They were traveling around Europe for a year before they returned home. (Ils ont voyagé en Europe pendant un an avant de rentrer chez eux.)</li>
+                        <li>He was studying English for two hours every day before the exam. (Il étudiait l'anglais pendant deux heures chaque jour avant l'examen.)</li>
+                      </ul>
+                    </ul>
+                </div>
+                <div class="col-sm m-1"></div>
+            </div>            
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid justify-content-center align-items-center text-center mt-5">
+            <h2>TEST YOURSELF !</h2>
+        </div>
+    </section>
+
+    <div class="container-fluid justify-content-center align-items-center" >
+        
+        {% for i in range(0,number_of_cards,2) %}
+        <div class="row m-5">
+            {% if i < number_of_cards: %}
+            <div class="col-sm m-5"></div>
+            <div class="col-sm">
+                <div class="mt-5">
+                    <div class="return-card">
+                        <div class="return-card-wrap">
+                            <div class="return-card-front d-flex justify-content-center align-items-center">
+                            <h2>{{question[i]}}</h2>
+                            </div>
+                            <div class="return-card-back d-flex justify-content-center align-items-center">
+                            <h2>{{answer[i]}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            {% endif %}
+            <div class="col-sm m-5"></div>
+            {% if i+1 < number_of_cards: %}
+            <div class="col-sm">
+                <div class="mt-5">
+                    <div class="return-card">
+                        <div class="return-card-wrap">
+                            <div class="return-card-front d-flex justify-content-center align-items-center">
+                            <h2>{{question[i+1]}}</h2>
+                            </div>
+                            <div class="return-card-back d-flex justify-content-center align-items-center">
+                            <h2>{{answer[i+1]}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            <div class="col-sm m-5"></div>
+
+            {% endif %}
+
+
+        </div>
+
+        {% endfor %}
+    </div>
+{% endblock %}

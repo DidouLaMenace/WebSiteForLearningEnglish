@@ -1,0 +1,108 @@
+{% extends "nav-tdl.html" %}
+
+{% block head %}
+    <link href="../static/styles/return-card.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+
+    <div class="container d-flex justify-content-center align-items-center text-center">
+        <div class="row m-5">
+            <span class="section-text-theme">{{theme_name}}</span>
+        </div>
+    </div>
+
+    <section>
+        <div class="container-fluid justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-sm m-1"></div>
+                <div class="col-sm">
+                    <h2 class="text-center">Le present perfect en anglais</h2>
+<h3>Comment se forme le present perfect ?</h3>
+<p>Le present perfect se forme en utilisant "have/has" suivi du participe passé du verbe principal.</p>
+<ul>
+  <li>I have studied English for three years. (J'ai étudié l'anglais pendant trois ans.)</li>
+  <li>You have traveled to many countries. (Tu as voyagé dans de nombreux pays.)</li>
+  <li>They have finished their homework. (Ils ont fini leur devoir.)</li>
+</ul>
+<h3>Comment utilise-t-on le present perfect ?</h3>
+<p>Le present perfect est utilisé pour décrire une action qui a commencé dans le passé et qui se poursuit jusqu'à maintenant :</p>
+<ul>
+  <li>Expériences passées :</li>
+  <ul>
+    <li>I have visited Paris twice. (J'ai visité Paris deux fois.)</li>
+    <li>She has eaten sushi before. (Elle a déjà mangé du sushi.)</li>
+    <li>They have seen that movie before. (Ils ont déjà vu ce film.)</li>
+  </ul>
+  <li>Actions qui ont commencé dans le passé et qui se poursuivent jusqu'à maintenant :</li>
+  <ul>
+    <li>I have worked for this company for ten years. (Je travaille pour cette entreprise depuis dix ans.)</li>
+    <li>He has lived in this city since he was a child. (Il habite dans cette ville depuis qu'il est enfant.)</li>
+    <li>We have been friends since we were in high school. (Nous sommes amis depuis que nous étions au lycée.)</li>
+  </ul>
+  <li>Actions qui ont un lien avec le présent :</li>
+  <ul>
+    <li>I have lost my keys. (J'ai perdu mes clés.)</li>
+    <li>She has broken her arm. (Elle s'est cassé le bras.)</li>
+    <li>They have bought a new car. (Ils ont acheté une nouvelle voiture.)</li>
+  </ul>
+</ul>
+                </div>
+                <div class="col-sm m-1"></div>
+            </div>            
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid justify-content-center align-items-center text-center mt-5">
+            <h2>TEST YOURSELF !</h2>
+        </div>
+    </section>
+
+    <div class="container-fluid justify-content-center align-items-center" >
+        
+        {% for i in range(0,number_of_cards,2) %}
+        <div class="row m-5">
+            {% if i < number_of_cards: %}
+            <div class="col-sm m-5"></div>
+            <div class="col-sm">
+                <div class="mt-5">
+                    <div class="return-card">
+                        <div class="return-card-wrap">
+                            <div class="return-card-front d-flex justify-content-center align-items-center">
+                            <h2>{{question[i]}}</h2>
+                            </div>
+                            <div class="return-card-back d-flex justify-content-center align-items-center">
+                            <h2>{{answer[i]}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            {% endif %}
+            <div class="col-sm m-5"></div>
+            {% if i+1 < number_of_cards: %}
+            <div class="col-sm">
+                <div class="mt-5">
+                    <div class="return-card">
+                        <div class="return-card-wrap">
+                            <div class="return-card-front d-flex justify-content-center align-items-center">
+                            <h2>{{question[i+1]}}</h2>
+                            </div>
+                            <div class="return-card-back d-flex justify-content-center align-items-center">
+                            <h2>{{answer[i+1]}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            <div class="col-sm m-5"></div>
+
+            {% endif %}
+
+
+        </div>
+
+        {% endfor %}
+    </div>
+{% endblock %}

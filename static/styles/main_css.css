@@ -1,11 +1,12 @@
 @import url(//db.onlinewebfonts.com/c/effd74cbf0d7ec814ef5b5c8b44e0988?family=VeneerW01-Two);
 @import url(//db.onlinewebfonts.com/c/db7994604cdb2450e83c893d200c251b?family=OMEGLE);
 @import url(//db.onlinewebfonts.com/c/13dbbd029d70f10549374a111e88aee0?family=Milkshake);
+@import url(//db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold);
 
 @font-face {font-family: "VeneerW01-Two"; src: url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.eot"); src: url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.woff") format("woff"), url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/effd74cbf0d7ec814ef5b5c8b44e0988.svg#VeneerW01-Two") format("svg"); } 
 @font-face {font-family: "OMEGLE"; src: url("//db.onlinewebfonts.com/t/db7994604cdb2450e83c893d200c251b.eot"); src: url("//db.onlinewebfonts.com/t/db7994604cdb2450e83c893d200c251b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/db7994604cdb2450e83c893d200c251b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/db7994604cdb2450e83c893d200c251b.woff") format("woff"), url("//db.onlinewebfonts.com/t/db7994604cdb2450e83c893d200c251b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/db7994604cdb2450e83c893d200c251b.svg#OMEGLE") format("svg"); } 
 @font-face {font-family: "Milkshake"; src: url("//db.onlinewebfonts.com/t/13dbbd029d70f10549374a111e88aee0.eot"); src: url("//db.onlinewebfonts.com/t/13dbbd029d70f10549374a111e88aee0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/13dbbd029d70f10549374a111e88aee0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/13dbbd029d70f10549374a111e88aee0.woff") format("woff"), url("//db.onlinewebfonts.com/t/13dbbd029d70f10549374a111e88aee0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/13dbbd029d70f10549374a111e88aee0.svg#Milkshake") format("svg"); } 
-
+@font-face {font-family: "Druk Wide Bold"; src: url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.eot"); src: url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.woff") format("woff"), url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.svg#Druk Wide Bold") format("svg"); } 
 body {
     background-color:azure;
 }
@@ -24,6 +25,12 @@ body {
 .section-text-theme {
   font-family: "Milkshake";
   font-size: 500%;
+  color: rgb(33, 59, 58);
+}
+
+.section-text-date {
+  font-family: "Druk Wide Bold";
+  font-size: 200%;
   color: rgb(33, 59, 58);
 }
 
@@ -167,11 +174,13 @@ body {
 /*Tableau*/
 table {
   border-collapse: collapse;
-  width: 100%;
+  table-layout: fixed;
+  width: 50%;
 }
 th, td {
   border: 1px solid black;
-  padding: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   text-align: center;
 }
 th {

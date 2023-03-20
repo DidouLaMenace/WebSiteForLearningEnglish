@@ -9,7 +9,7 @@ theme_voc_img=["animaux.png","jardinage.png","astronomie.png","descriptionphysiq
 
 theme_gram=["Present Simple","Present Continuous","Preterit","Past continuous","Present Perfect","Present Perfect Continuous","Past Perfect","Future Simple","Future Continuous","Modals","Comparative","Superlative"]
 
-theme_culture = ["Monarchy","Industrial Revolution","Commonwealth","World Wars","Religious History","Sports and Leisure"]
+theme_culture = ["World War I","World War II","The Vietnam War","Medieval Period","The Cold War","History of USA","History of Britain","The Industrial Age","Ancient Greece"]
 
 
 @app.route("/")
@@ -45,15 +45,64 @@ def card_gram_theme():
     all_card_theme = theme_selected_voc(theme_selected)
     question = all_card_theme[0]
     answer = all_card_theme[1]
-    return render_template("gram/stack-gram.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    if (theme_selected == "Present Simple") :
+        return render_template("gram/presentSimple.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "Present Continuous") :
+        return render_template("gram/presentContinuous.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "Preterit") :
+        return render_template("gram/preterit.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "Past continuous") :
+        return render_template("gram/pastContinuous.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "Present Perfect") :
+        return render_template("gram/presentPerfect.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "Present Perfect Continuous") :
+        return render_template("gram/presentPerfectContinuous.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "Past Perfect") :
+        return render_template("gram/pastPerfect.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "Future Simple") :
+        return render_template("gram/futureSimple.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "Future Continuous") :
+        return render_template("gram/futureContinuous.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "Modals") :
+        return render_template("gram/modals.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "Comparative") :
+        return render_template("gram/comparative.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "Superlative") :
+        return render_template("gram/superlative.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    else :
+        return render_template("errorNotFound.html")
 
 @app.route("/train-culture&history")
 def card_cult_theme():
     theme_selected = request.args.get("selected_theme")
+    print(theme_selected)
     all_card_theme = theme_selected_voc(theme_selected)
     question = all_card_theme[0]
     answer = all_card_theme[1]
-    return render_template("cult/stack-cult.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    if (theme_selected == "World War II"):
+        return render_template("cult/worldWarII.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "World War I"):
+        return render_template("cult/worldWarI.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "The Vietnam War"):
+        return render_template("cult/vietnamWar.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "Medieval Period"):
+        return render_template("cult/medievalPeriod.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "The Cold War"):
+        return render_template("cult/coldWar.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "History of USA"):
+        return render_template("cult/historyUSA.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "History of Britain"):
+        return render_template("cult/historyBritain.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "Interwar Period"):
+        return render_template("cult/interwarPeriod.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "The Wild West"):
+        return render_template("cult/wildWest.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "The Industrial Age"):
+        return render_template("cult/industrialAge.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    elif (theme_selected == "Ancient Greece"):
+        return render_template("cult/ancientGreece.html",number_of_cards=len(question),question=question,answer=answer,theme_name=theme_selected)
+    else :
+        return render_template("errorNotFound.html")
 
 @app.route("/exams",methods=["GET","POST"])
 def exams():

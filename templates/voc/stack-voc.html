@@ -16,14 +16,14 @@
     <div class="container mb-5 d-flex justify-content-center align-items-center text-center">
         <div class="toggle-btn">
             <input type="checkbox" id="toggle">
-            <label for="toggle">Learning Mode</label>
-            <span class="toggle-text-left">ON</span>
-            <span class="toggle-text-right">OFF</span>
+            <label for="toggle"></label>
+            <span class="toggle-text-left" style="margin-right: 5em;">Learn</span>
+            <span class="toggle-text-right">Test</span>
         </div>
     </div>
 
-    <div id="apprentissage" style="display: block;">
-        <div class="container-fluid d-flex justify-content-center align-items-center">
+    <div id="apprentissage">
+        <div class="container-fluid justify-content-center align-items-center">
             <div class="row">
                 <table>
                     <tr> 
@@ -41,7 +41,7 @@
         </div>
     </div>
 
-    <div id="autoapprentissage" style="display: none;">
+    <div id="autoapprentissage">
         <div class="container-fluid justify-content-center align-items-center" >
         
             {% for i in range(0,number_of_cards,2) %}
@@ -99,6 +99,15 @@
     bouton = document.getElementById('toggle');
     apprentissageMode = document.getElementById('apprentissage');
     autoapprentissageMode = document.getElementById('autoapprentissage');
+
+    if (bouton.checked) {
+            apprentissageMode.style.display = 'none';
+            autoapprentissageMode.style.display = 'block';
+    }
+    else {
+        apprentissageMode.style.display = 'block';
+        autoapprentissageMode.style.display = 'none';
+    }
 
     bouton.addEventListener('click', function() {
         if (bouton.checked) {

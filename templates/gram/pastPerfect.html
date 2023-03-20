@@ -1,0 +1,102 @@
+{% extends "nav-tdl.html" %}
+
+{% block head %}
+    <link href="../static/styles/return-card.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+
+    <div class="container d-flex justify-content-center align-items-center text-center">
+        <div class="row m-5">
+            <span class="section-text-theme">{{theme_name}}</span>
+        </div>
+    </div>
+
+    <section>
+        <div class="container-fluid justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-sm m-1"></div>
+                <div class="col-sm">
+                    <h2 class="text-center">Le past perfect en anglais</h2>
+<h3>Comment se forme le past perfect ?</h3>
+<p>Le past perfect se forme en utilisant "had" suivi du participe passé du verbe principal :</p>
+<ul>
+  <li>I had studied English before I moved to the United States. (J'avais étudié l'anglais avant de déménager aux États-Unis.)</li>
+  <li>You had visited New York City before, hadn't you? (Tu avais déjà visité New York, n'est-ce pas ?)</li>
+  <li>They had finished their dinner before we arrived. (Ils avaient fini leur dîner avant que nous arrivions.)</li>
+</ul>
+<h3>Comment utilise-t-on le past perfect ?</h3>
+<p>Le past perfect est utilisé pour décrire une action qui s'est produite avant une autre action passée :</p>
+<ul>
+  <li>Action passée qui est arrivée avant une autre action passée :</li>
+  <ul>
+    <li>He had already eaten breakfast before he went to work. (Il avait déjà pris son petit déjeuner avant d'aller travailler.)</li>
+    <li>They had finished their homework before they watched TV. (Ils avaient fini leurs devoirs avant de regarder la télévision.)</li>
+    <li>She had read the book twice before she gave it to her friend. (Elle avait lu le livre deux fois avant de le donner à son ami.)</li>
+  </ul>
+  <li>Action passée qui est arrivée avant un moment spécifique dans le passé :</li>
+  <ul>
+    <li>He had lived in London for five years before he moved to Paris. (Il avait vécu à Londres pendant cinq ans avant de déménager à Paris.)</li>
+    <li>They had been married for ten years before they had children. (Ils étaient mariés depuis dix ans avant d'avoir des enfants.)</li>
+    <li>She had known him since they were in college. (Elle le connaissait depuis qu'ils étaient à l'université.)</li>
+  </ul>
+</ul>
+                </div>
+                <div class="col-sm m-1"></div>
+            </div>            
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid justify-content-center align-items-center text-center mt-5">
+            <h2>TEST YOURSELF !</h2>
+        </div>
+    </section>
+
+    <div class="container-fluid justify-content-center align-items-center" >
+        
+        {% for i in range(0,number_of_cards,2) %}
+        <div class="row m-5">
+            {% if i < number_of_cards: %}
+            <div class="col-sm m-5"></div>
+            <div class="col-sm">
+                <div class="mt-5">
+                    <div class="return-card">
+                        <div class="return-card-wrap">
+                            <div class="return-card-front d-flex justify-content-center align-items-center">
+                            <h2>{{question[i]}}</h2>
+                            </div>
+                            <div class="return-card-back d-flex justify-content-center align-items-center">
+                            <h2>{{answer[i]}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            {% endif %}
+            <div class="col-sm m-5"></div>
+            {% if i+1 < number_of_cards: %}
+            <div class="col-sm">
+                <div class="mt-5">
+                    <div class="return-card">
+                        <div class="return-card-wrap">
+                            <div class="return-card-front d-flex justify-content-center align-items-center">
+                            <h2>{{question[i+1]}}</h2>
+                            </div>
+                            <div class="return-card-back d-flex justify-content-center align-items-center">
+                            <h2>{{answer[i+1]}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            <div class="col-sm m-5"></div>
+
+            {% endif %}
+
+
+        </div>
+
+        {% endfor %}
+    </div>
+{% endblock %}

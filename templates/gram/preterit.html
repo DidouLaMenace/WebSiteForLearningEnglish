@@ -1,0 +1,117 @@
+{% extends "nav-tdl.html" %}
+
+{% block head %}
+    <link href="../static/styles/return-card.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+
+    <div class="container d-flex justify-content-center align-items-center text-center">
+        <div class="row m-5">
+            <span class="section-text-theme">{{theme_name}}</span>
+        </div>
+    </div>
+
+    <section>
+        <div class="container-fluid justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-sm m-1"></div>
+                <div class="col-sm">
+                    <h2 class="text-center">Le prétérit en anglais</h2>
+<h3>Comment se forme le prétérit ?</h3>
+<p>Le prétérit se forme en utilisant la forme simple du verbe régulier (ajoutant "-ed" à la fin du verbe) ou en utilisant la forme irrégulière du verbe :</p>
+<ul>
+  <li>Verbes réguliers : ajout de "-ed" à la fin du verbe</li>
+  <ul>
+    <li>I walked to the store. (J'ai marché jusqu'au magasin.)</li>
+    <li>You played soccer last weekend. (Tu as joué au soccer le week-end dernier.)</li>
+    <li>We watched a movie last night. (Nous avons regardé un film hier soir.)</li>
+  </ul>
+  <li>Verbes irréguliers : utilisation de la forme irrégulière du verbe</li>
+  <ul>
+    <li>I went to the store. (Je suis allé(e) au magasin.)</li>
+    <li>You ate pizza for dinner. (Tu as mangé de la pizza pour le dîner.)</li>
+    <li>We saw a concert last weekend. (Nous avons vu un concert le week-end dernier.)</li>
+  </ul>
+</ul>
+<h3>Comment utilise-t-on le prétérit ?</h3>
+<p>Le prétérit est utilisé pour décrire une action qui s'est déroulée à un moment précis dans le passé :</p>
+<ul>
+  <li>Actions qui se sont déroulées dans le passé :</li>
+  <ul>
+    <li>I visited my grandparents last weekend. (J'ai rendu visite à mes grands-parents le week-end dernier.)</li>
+    <li>She danced at the party all night. (Elle a dansé toute la nuit à la fête.)</li>
+    <li>They finished their homework before dinner. (Ils ont fini leurs devoirs avant le dîner.)</li>
+  </ul>
+  <li>Actions qui ont eu lieu dans le passé et qui ont été complétées :</li>
+  <ul>
+    <li>I cooked dinner for my family. (J'ai préparé le dîner pour ma famille.)</li>
+    <li>He cleaned his room yesterday. (Il a nettoyé sa chambre hier.)</li>
+    <li>We studied for the exam last night. (Nous avons étudié pour l'examen hier soir.)</li>
+  </ul>
+  <li>Actions qui ont duré pendant une période de temps dans le passé :</li>
+  <ul>
+    <li>I lived in Paris for two years. (J'ai vécu à Paris pendant deux ans.)</li>
+    <li>You worked at the company for five years. (Tu as travaillé dans l'entreprise pendant cinq ans.)</li>
+    <li>We studied English for two hours yesterday. (Nous avons étudié l'anglais pendant deux heures hier.)</li>
+  </ul>
+</ul>
+                </div>
+                <div class="col-sm m-1"></div>
+            </div>            
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid justify-content-center align-items-center text-center mt-5">
+            <h2>TEST YOURSELF !</h2>
+        </div>
+    </section>
+
+    <div class="container-fluid justify-content-center align-items-center" >
+        
+        {% for i in range(0,number_of_cards,2) %}
+        <div class="row m-5">
+            {% if i < number_of_cards: %}
+            <div class="col-sm m-5"></div>
+            <div class="col-sm">
+                <div class="mt-5">
+                    <div class="return-card">
+                        <div class="return-card-wrap">
+                            <div class="return-card-front d-flex justify-content-center align-items-center">
+                            <h2>{{question[i]}}</h2>
+                            </div>
+                            <div class="return-card-back d-flex justify-content-center align-items-center">
+                            <h2>{{answer[i]}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            {% endif %}
+            <div class="col-sm m-5"></div>
+            {% if i+1 < number_of_cards: %}
+            <div class="col-sm">
+                <div class="mt-5">
+                    <div class="return-card">
+                        <div class="return-card-wrap">
+                            <div class="return-card-front d-flex justify-content-center align-items-center">
+                            <h2>{{question[i+1]}}</h2>
+                            </div>
+                            <div class="return-card-back d-flex justify-content-center align-items-center">
+                            <h2>{{answer[i+1]}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+            <div class="col-sm m-5"></div>
+
+            {% endif %}
+
+
+        </div>
+
+        {% endfor %}
+    </div>
+{% endblock %}
