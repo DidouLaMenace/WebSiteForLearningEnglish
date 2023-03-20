@@ -4,7 +4,7 @@ from backend.content.exams import question_for_exams_voc
 
 app=Flask(__name__)
 
-theme_voc=["Animals","Gardening","Astronomy","Physical description","Family and Friends","Fruits and vegetables","Computer science","In the house", "Weather", "The human body","Hobbies","Nationality","Science","TOEIC"]
+theme_voc=["Animals","Gardening","Astronomy","Physical description","Family and Friends","Fruits and vegetables","Computer Science","In the house", "Weather", "The human body","Hobbies","Nationality","Science","TOEIC"]
 theme_voc_img=["animaux.png","jardinage.png","astronomie.png","descriptionphysique.png","famille.png","legumes.png","informatique.png","maison.png","meteo.png","corpshumain.png","loisirs.png","nationalite.png","la-science.png","toeic.png"]
 
 theme_gram=["Present Simple","Present Continuous","Preterit","Past continuous","Present Perfect","Present Perfect Continuous","Past Perfect","Future Simple","Future Continuous","Modals","Comparative","Superlative"]
