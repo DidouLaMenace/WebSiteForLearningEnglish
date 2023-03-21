@@ -1,5 +1,101 @@
 flask
 #sqlite3
 #python-dotenv-0.21.0
-Flask-Session
-flask-socketio
+
+
+UNE PARTIE AVEC DES ARTICLES DU GUARDIAN / NEW TIMES 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News API Example</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		var apiKey = "VOTRE_CLÉ_D_API";
+		var url = "https://newsapi.org/v2/top-headlines?sources=the-guardian-uk&apiKey=" + apiKey;
+		
+		$(document).ready(function() {
+			$.ajax({
+				url: url,
+				method: 'GET',
+				dataType: 'json',
+				success: function(data) {
+					var articles = data.articles;
+					var list = $("<ul>");
+					
+					$.each(articles, function(index, article) {
+						var title = $("<h2>").text(article.title);
+						var description = $("<p>").text(article.description);
+						var author = $("<p>").text("By " + article.author);
+						var publishedAt = $("<p>").text("Published at " + article.publishedAt);
+						var link = $("<a>").attr("href", article.url).text("Read more");
+						
+						var listItem = $("<li>");
+						listItem.append(title, description, author, publishedAt, link);
+						list.append(listItem);
+					});
+					
+					$("#articles").append(list);
+				},
+				error: function(err) {
+					console.log(err);
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="articles"></div>
+</body>
+</html>
+
+
+ERREUR CARD COMPARATIF SUPERLATIF
+API POUR PRONONCIATION DE MOT VOCAB
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Cloud Text-to-Speech Example</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://apis.google.com/js/api.js"></script>
+	<script>
+		gapi.load('client', function() {
+			gapi.client.init({
+				apiKey: 'VOTRE_CLÉ_D_API'
+			});
+		});
+
+		function speak(text) {
+			gapi.client.request({
+				path: 'https://texttospeech.googleapis.com/v1/text:synthesize',
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					input: {
+						text: text
+					},
+					voice: {
+						languageCode: 'en-US',
+						name: 'en-US-Standard-C',
+						ssmlGender: 'FEMALE'
+					},
+					audioConfig: {
+						audioEncoding: 'MP3'
+					}
+				})
+			}).then(function(response) {
+				var audioData = response.result.audioContent;
+				var audio = new Audio();
+				audio.src = 'data:audio/mp3;base64,' + audioData;
+				audio.play();
+			}, function(reason) {
+				console.log('Error: ' + reason.result.error.message);
+			});
+		}
+	</script>
+</head>
+<body>
+	<button onclick="speak('hello')">Prononcer</button>
+</body>
+</html>

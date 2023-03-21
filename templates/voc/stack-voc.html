@@ -32,8 +32,14 @@
                     </tr>
                     {% for i in range(number_of_cards) %}
                         <tr>
-                            <td>{{question[i]}}</td>
-                            <td>{{answer[i]}}</td>
+                            <td> 
+                                <button class="speak-button" onclick="speak('{{question[i]}}')">Speak</button>                                
+                                <span>{{question[i]}}</span>
+                            </td>
+                            <td>
+                                <span>{{answer[i]}}</span>
+                                <button class="speak-button" onclick="speak('{{answer[i]}}')">Speak</button>                                
+                            </td>
                         </tr>
                     {% endfor %}
                 </table>
@@ -85,40 +91,27 @@
             </div>
         {% endfor %}
     </div>
-   
-        
-
-
-    </div>
+</div>
 
 {% endblock %}
 
 {% block script %}
 
+<script src="/static/js/VocabPart/switchInterfaceVoc.js"></script>
+
 <script>
-    bouton = document.getElementById('toggle');
-    apprentissageMode = document.getElementById('apprentissage');
-    autoapprentissageMode = document.getElementById('autoapprentissage');
-
-    if (bouton.checked) {
-            apprentissageMode.style.display = 'none';
-            autoapprentissageMode.style.display = 'block';
-    }
-    else {
-        apprentissageMode.style.display = 'block';
-        autoapprentissageMode.style.display = 'none';
-    }
-
-    bouton.addEventListener('click', function() {
-        if (bouton.checked) {
-            apprentissageMode.style.display = 'none';
-            autoapprentissageMode.style.display = 'block';
-        }
-        else {
-            apprentissageMode.style.display = 'block';
-            autoapprentissageMode.style.display = 'none';
-        }
-    });
+function speak(text) {
+    const synth = window.speechSynthesis;
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.onerror = (event) => {
+        console.error('Speech synthesis error:', event.error);
+    };
+    utterance.voice = synth.getVoices()[0];
+    utterance.rate = 1; 
+    utterance.pitch = 2;
+    utterance.volume = 14;
+    synth.speak(utterance);
+}
 </script>
 
 {% endblock %}

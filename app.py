@@ -11,6 +11,7 @@ theme_gram=["Present Simple","Present Continuous","Preterit","Past continuous","
 
 theme_culture = ["World War I","World War II","The Vietnam War","Medieval Period","The Cold War","History of USA","History of Britain","The Industrial Age","Ancient Greece"]
 
+app = Flask(__name__)
 
 @app.route("/")
 def page_accueil():
@@ -113,6 +114,10 @@ def exams():
         vocfrenchexams.append(listforexams[i][0])
         vocenglishexams.append(listforexams[i][1])
     return render_template("exams/exams.html",lenlistforexams=len(listforexams),vocfrenchexams=vocfrenchexams,vocenglishexams=vocenglishexams)
+
+@app.route("/article",methods=["GET","POST"])
+def article():
+    return render_template("article/article.html")
 
 if __name__=="__main__":
     app.debug=True
