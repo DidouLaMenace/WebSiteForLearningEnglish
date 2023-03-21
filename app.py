@@ -1,6 +1,8 @@
 from flask import Flask,render_template,request
 from backend.content.selectvoc import theme_selected_voc
 from backend.content.exams import question_for_exams_voc
+from dotenv import load_dotenv
+import os
 
 app=Flask(__name__)
 
@@ -117,7 +119,10 @@ def exams():
 
 @app.route("/article",methods=["GET","POST"])
 def article():
-    return render_template("article/article.html")
+    # Load Environnement from .env file
+    load_dotenv()
+    apikey = os.getenv('API_KEY')
+    return render_template("article/article.html",apikey=apikey)
 
 if __name__=="__main__":
     app.debug=True

@@ -16,6 +16,13 @@ sudo apt install sqlite3
 
 python-dotenv-0.21.0
 
+For Javascript :
+npm install --save-dev dotenv-webpack
+
+### Installer NEWSAPI ###
+
+npm install newsapi --save
+
 ### Installer les requirements ###
 
 pip install -r requirements.txt

@@ -2,4 +2,45 @@
 
 {% block body %}
 
+  <div class="container justify-content-center align-items-center mt-5 mb-5">
+    <div id="news-container" class="row"></div>
+  </div>  
+
+<script>
+  
+  const apikey = '{{apikey}}';
+  const url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apikey}`;
+
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      const articles = data.articles;
+      const newsContainer = document.getElementById('news-container');
+      let newsHTML = '';
+
+      articles.forEach(article => {
+        const title = article.title;
+        const description = article.description;
+        const url = article.url;
+        const imageUrl = article.urlToImage;
+
+        newsHTML += `
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="${imageUrl}" class="card-img-top" alt="${title}">
+              <div class="card-body">
+                <h5 class="card-title"><a href="${url}">${title}</a></h5>
+                <p class="card-text">${description}</p>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+
+      newsContainer.innerHTML = newsHTML;
+    })
+    .catch(error => console.error(error));
+</script>
+
+
 {% endblock %}
