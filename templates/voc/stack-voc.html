@@ -33,12 +33,12 @@
                     {% for i in range(number_of_cards) %}
                         <tr>
                             <td> 
-                                <button class="speak-button" onclick="speakFrench('{{question[i]}}')">Speak</button>                                
                                 <span>{{question[i]}}</span>
+                                <img class="speak-button ml-2" src="/static/img/monter-le-son.png" style="width: 30px; height: 30px;" onclick="speakFrench('{{question[i]}}')">
                             </td>
                             <td>
                                 <span>{{answer[i]}}</span>
-                                <button class="speak-button" onclick="speakEnglish('{{answer[i]}}')">Speak</button>                                
+                                <img class="speak-button ml-2" src="/static/img/monter-le-son.png" style="width: 30px; height: 30px;" onclick="speakEnglish('{{answer[i]}}')">                            
                             </td>
                         </tr>
                     {% endfor %}
